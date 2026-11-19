@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Pasien - Klinik Sehat</title>
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran Pasien</h2>
+    <h3>Klinik Sehat</h3>
+
+    <form action="Formulir_kliniksehat.html" method="post">
+
+        <label for="nama">Nama Pasien:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+        <br><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        <br><br>
+
+        Jenis Kelamin:
+        <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki" checked>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+
+        <label for="alamat">Alamat:</label>
+        <br>
+        <textarea id="alamat" name="alamat" rows="3" cols="40"></textarea>
+        <br><br>
+
+        <label for="no_hp">No. HP:</label>
+        <input type="text" id="no_hp" name="no_hp" placeholder="08xxxxxxxxxx">
+        <br><br>
+
+        <label for="poli">Poli Tujuan:</label>
+        <select id="poli" name="poli">
+            <option value="umum">Poli Umum</option>
+            <option value="gigi">Poli Gigi</option>
+            <option value="anak">Poli Anak</option>
+            <option value="kandungan">Poli Kandungan</option>
+            <option value="mata">Poli Mata</option>
+        </select>
+        <br><br>
+
+        <label for="tanggal_kunjungan">Tanggal Kunjungan:</label>
+        <input type="date" id="tanggal_kunjungan" name="tanggal_kunjungan">
+        <br><br>
+
+        Jenis Pembayaran:
+        <input type="radio" id="umum_bayar" name="pembayaran" value="umum" checked>
+        <label for="umum_bayar">Umum</label>
+        <input type="radio" id="bpjs" name="pembayaran" value="bpjs">
+        <label for="bpjs">BPJS</label>
+        <input type="radio" id="asuransi" name="pembayaran" value="asuransi">
+        <label for="asuransi">Asuransi</label>
+        <br><br>
+
+        Riwayat Alergi:
+        <input type="checkbox" id="alergi_obat" name="alergi_obat">
+        <label for="alergi_obat">Obat</label>
+        <input type="checkbox" id="alergi_makanan" name="alergi_makanan">
+        <label for="alergi_makanan">Makanan</label>
+        <input type="checkbox" id="alergi_debu" name="alergi_debu">
+        <label for="alergi_debu">Debu</label>
+        <br><br>
+
+        <label for="keluhan">Keluhan:</label>
+        <br>
+        <textarea id="keluhan" name="keluhan" rows="5" cols="40" placeholder="Ceritakan keluhan yang dirasakan"></textarea>
+        <br><br>
+
+        <input type="submit" value="Daftar Berobat">
+        <input type="reset" value="Ulangi">
+    </form>
+</body>
+
+</html>

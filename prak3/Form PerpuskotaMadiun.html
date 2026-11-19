@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Anggota - Perpustakaan Kota Madiun</title>
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran Anggota</h2>
+    <h3>Perpustakaan Kota Madiun</h3>
+
+    <form action="Formulir_Perpuskotamadiun.html" method="post">
+
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+        <br><br>
+
+        <label for="nik">NIK:</label>
+        <input type="text" id="nik" name="nik" maxlength="16" placeholder="16 digit NIK">
+        <br><br>
+
+        <label for="tempat_lahir">Tempat Lahir:</label>
+        <input type="text" id="tempat_lahir" name="tempat_lahir">
+        <br><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        <br><br>
+
+        Jenis Kelamin:
+        <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki" checked>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+
+        <label for="alamat">Alamat Lengkap:</label>
+        <br>
+        <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan"></textarea>
+        <br><br>
+
+        <label for="no_hp">No. HP:</label>
+        <input type="text" id="no_hp" name="no_hp" placeholder="08xxxxxxxxxx">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com">
+        <br><br>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <select id="pekerjaan" name="pekerjaan">
+            <option value="pelajar">Pelajar</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="pegawai">Pegawai</option>
+            <option value="wiraswasta">Wiraswasta</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <br><br>
+
+        Jenis Keanggotaan:
+        <input type="radio" id="umum" name="keanggotaan" value="umum" checked>
+        <label for="umum">Umum</label>
+        <input type="radio" id="pelajar" name="keanggotaan" value="pelajar">
+        <label for="pelajar">Pelajar/Mahasiswa</label>
+        <br><br>
+
+        Minat Bacaan:
+        <input type="checkbox" id="minat_fiksi" name="minat_fiksi">
+        <label for="minat_fiksi">Fiksi</label>
+        <input type="checkbox" id="minat_sains" name="minat_sains">
+        <label for="minat_sains">Sains</label>
+        <input type="checkbox" id="minat_sejarah" name="minat_sejarah">
+        <label for="minat_sejarah">Sejarah</label>
+        <input type="checkbox" id="minat_teknologi" name="minat_teknologi">
+        <label for="minat_teknologi">Teknologi</label>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        
+        <label for="catatan">Saran untuk Perpustakaan:</label>
+        <br>
+        <textarea id="catatan" name="catatan" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <input type="submit" value="Daftar Sekarang">
+        <input type="reset" value="Ulangi">
+    </form>
+</body>
+
+</html>
